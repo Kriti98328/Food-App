@@ -1,0 +1,32 @@
+.foodMain{
+    display: flex;
+}
+
+
+
+.leftFood{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 430px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    
+}
+
+.leftFood a{
+    color: white;
+    text-decoration: none;
+    margin: 10px auto;
+    font-size: 25px;
+    
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.rightFood{
+    width: 70%;
+    
+}

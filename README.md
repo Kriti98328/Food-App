@@ -1,4 +1,4 @@
-****Food App****
+__****Food App****__
 
 This is a full-stack web application designed for restaurant owners and clients. The app has two interfaces: one for restaurant owners to manage their menu and another for clients to place food orders.
 

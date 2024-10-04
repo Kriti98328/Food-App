@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+Food App
+This is a full-stack web application designed for restaurant owners and clients. The app has two interfaces: one for restaurant owners to manage their menu and another for clients to place food orders.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Owner Side:
+Sign Up/Login: Restaurant owners can create an account and log in.
+Menu Management: Owners can add, edit, or remove menu items, and set their prices.
+Client Side:
+Order Food: Clients can browse the restaurant's menu and place orders.
 
-## Available Scripts
+Technologies Used
+Frontend:
+React.js:
+React.js is used for building the entire frontend of the app. Components like Login, SignUp, MenuList, and OrderForm are created using React, making the UI highly modular and easy to manage. React's state management is employed to handle form inputs, client orders, and real-time updates of menu items.
+Routing: React Router is used to handle the navigation between different pages of the app such as the home page, login page, signup page, and dashboard.
+CSS:
+Custom CSS is applied to style the app, ensuring a user-friendly and responsive interface. CSS is used for layout design, typography, and responsive behavior across mobile, tablet, and desktop views. CSS Grid and Flexbox are utilized to align and manage components dynamically.
 
-In the project directory, you can run:
+Backend:
+Spring Boot:
+Spring Boot powers the backend of the application. RESTful APIs are developed to manage operations such as user authentication, menu management, and order processing. Controllers are built to handle HTTP requests coming from the React frontend, and services are used to implement the business logic for each feature.
+Menu Management API: A set of APIs are created to allow the owner to add, update, or delete menu items. The owner’s authentication status is checked using Spring Security before any action is performed.
+Spring Security:
+Spring Security is integrated to secure both the owner and client sides of the application. It handles authentication and authorization using JWT (JSON Web Token). Owners must log in to manage menus, and clients are authenticated before placing orders. Security configurations ensure that unauthorized users cannot access restricted endpoints.
 
-### `npm start`
+Database:
+MySQL:
+MySQL is used as the relational database to store all persistent data such as owner credentials, menu items, prices, and client orders. The database schema includes tables for users, menu items, and orders.
+Data Persistence: JPA (Java Persistence API) and Hibernate are used to map database entities to Java objects, making it easier to interact with the database. CRUD operations are performed on the database through repositories to keep menu items and orders in sync.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Home Page:
+![home page](https://github.com/user-attachments/assets/c3c11cf1-176a-4610-8259-378b92037d97)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Login Page:
+![WhatsApp Image 2024-10-04 at 3 49 24 PM](https://github.com/user-attachments/assets/58ceec38-53d9-4a3a-a5a6-e37a199c6969)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Sign-Up Page:
+![register](https://github.com/user-attachments/assets/2e56aa87-b0df-4cef-9094-a6fb077777e7)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
